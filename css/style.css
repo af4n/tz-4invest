@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +61,66 @@ a img {
 /* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 4, ../sass/style.scss */
+.header {
+  background: url(../img/header.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 715px;
+}
+
+/* line 13, ../sass/style.scss */
+.top-line {
+  background: #2c3440;
+  height: 78px;
+  line-height: 78px;
+  background-color: #2c3440;
+  -webkit-box-shadow: 0 1px 1px #2c3440;
+  -moz-box-shadow: 0 1px 1px #2c3440;
+  -o-box-shadow: 0 1px 1px #2c3440;
+  box-shadow: 0 1px 1px #2c3440;
+}
+/* line 22, ../sass/style.scss */
+.top-line .container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 25, ../sass/style.scss */
+.top-line .container .top-line-logo {
+  display: block;
+  float: left;
+}
+/* line 29, ../sass/style.scss */
+.top-line .container .top-line-nav {
+  display: inline-block;
+}
+/* line 31, ../sass/style.scss */
+.top-line .container .top-line-nav li {
+  float: left;
+  margin-left: 35px;
+}
+/* line 34, ../sass/style.scss */
+.top-line .container .top-line-nav li a {
+  font: 14px OpenSansRegular;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 41, ../sass/style.scss */
+.top-line .container .top-line-user {
+  display: inline-block;
+  float: right;
+}
+/* line 44, ../sass/style.scss */
+.top-line .container .top-line-user li {
+  float: left;
+}
+/* line 46, ../sass/style.scss */
+.top-line .container .top-line-user li a {
+  font: 15px VerdanaRegular;
+  color: #b7c5d9;
+  text-transform: uppercase;
 }

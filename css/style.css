@@ -74,53 +74,116 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 13, ../sass/style.scss */
-.top-line {
+.topline {
   background: #2c3440;
   height: 78px;
   line-height: 78px;
   background-color: #2c3440;
-  -webkit-box-shadow: 0 1px 1px #2c3440;
-  -moz-box-shadow: 0 1px 1px #2c3440;
-  -o-box-shadow: 0 1px 1px #2c3440;
-  box-shadow: 0 1px 1px #2c3440;
+  -webkit-box-shadow: 0 2px 2px #2d2d2d;
+  -moz-box-shadow: 0 2px 2px #2d2d2d;
+  -o-box-shadow: 0 2px 2px #2d2d2d;
+  box-shadow: 0 2px 2px #2d2d2d;
 }
 /* line 22, ../sass/style.scss */
-.top-line .container {
-  max-width: 1280px;
+.topline .container {
+  max-width: 1170px;
   margin: 0 auto;
 }
 /* line 25, ../sass/style.scss */
-.top-line .container .top-line-logo {
-  display: block;
+.topline .container .topline-logo {
+  display: inline-block;
   float: left;
 }
-/* line 29, ../sass/style.scss */
-.top-line .container .top-line-nav {
-  display: inline-block;
+/* line 28, ../sass/style.scss */
+.topline .container .topline-logo img {
+  padding-bottom: 10px;
 }
-/* line 31, ../sass/style.scss */
-.top-line .container .top-line-nav li {
+/* line 32, ../sass/style.scss */
+.topline .container .topline-nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 35, ../sass/style.scss */
+.topline .container .topline-nav li {
   float: left;
   margin-left: 35px;
 }
-/* line 34, ../sass/style.scss */
-.top-line .container .top-line-nav li a {
+/* line 38, ../sass/style.scss */
+.topline .container .topline-nav li a {
   font: 14px OpenSansRegular;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 }
-/* line 41, ../sass/style.scss */
-.top-line .container .top-line-user {
+/* line 47, ../sass/style.scss */
+.topline .container .topline-nav li a:hover {
+  color: #f1c439;
+  text-decoration: none;
+}
+/* line 53, ../sass/style.scss */
+.topline .container .topline-user {
   display: inline-block;
   float: right;
 }
-/* line 44, ../sass/style.scss */
-.top-line .container .top-line-user li {
+/* line 56, ../sass/style.scss */
+.topline .container .topline-user .btn-user {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 8px;
+  background-color: #405770;
+  border: 0;
+  color: #b7c5d9;
+  font: 15px VerdanaRegular;
+  padding: 6px;
+  margin-top: 23px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 2px 2px rgba(35, 35, 35, 0.75);
+  -moz-box-shadow: 0 2px 2px rgba(35, 35, 35, 0.75);
+  -o-box-shadow: 0 2px 2px rgba(35, 35, 35, 0.75);
+  box-shadow: 0 2px 2px rgba(35, 35, 35, 0.75);
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/* line 80, ../sass/style.scss */
+.topline .container .topline-user .btn-user:last-child {
+  padding: 6px 20px;
+}
+/* line 83, ../sass/style.scss */
+.topline .container .topline-user .btn-user:hover {
+  background: #314f6f;
+  color: #f1c439;
+}
+
+/* line 92, ../sass/style.scss */
+.header-content .fast-start {
+  display: block;
   float: left;
 }
-/* line 46, ../sass/style.scss */
-.top-line .container .top-line-user li a {
-  font: 15px VerdanaRegular;
-  color: #b7c5d9;
-  text-transform: uppercase;
+/* line 95, ../sass/style.scss */
+.header-content .fast-start img {
+  -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);
+}
+/* line 100, ../sass/style.scss */
+.header-content .form-signup {
+  max-width: 389px;
+  height: 406px;
+  display: block;
+  float: right;
+  position: relative;
+  background: url(../img/form-shadow.png) 0 0 no-repeat;
+}
+/* line 107, ../sass/style.scss */
+.header-content .form-signup input {
+  background: #000;
+  border: 1px solid #f1c439;
+  border-left-width: 4px;
 }

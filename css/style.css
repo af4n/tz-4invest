@@ -93,22 +93,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .topline .container .topline-logo {
   display: inline-block;
   float: left;
+  margin-left: 60px;
 }
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .topline .container .topline-logo img {
   padding-bottom: 10px;
 }
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .topline .container .topline-nav {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .topline .container .topline-nav li {
   float: left;
   margin-left: 35px;
 }
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .topline .container .topline-nav li a {
   font: 14px OpenSansRegular;
   color: #fff;
@@ -118,17 +119,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .topline .container .topline-nav li a:hover {
-  color: #f1c439;
+  color: #e8b927;
   text-decoration: none;
 }
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .topline .container .topline-user {
   display: inline-block;
   float: right;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .topline .container .topline-user .btn-user {
   float: left;
   height: 32px;
@@ -153,37 +154,117 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 80, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .topline .container .topline-user .btn-user:last-child {
   padding: 6px 20px;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .topline .container .topline-user .btn-user:hover {
   background: #314f6f;
-  color: #f1c439;
+  color: #e8b927;
 }
 
-/* line 92, ../sass/style.scss */
-.header-content .fast-start {
+/* line 94, ../sass/style.scss */
+.header-content .container h3 {
+  font: 26px OpenSansBold;
+  line-height: 38px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+/* line 102, ../sass/style.scss */
+.header-content .container h1 {
+  font: 42px OpenSansBold;
+  line-height: 61px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+/* line 110, ../sass/style.scss */
+.header-content .container span {
+  color: #e8b927;
+}
+/* line 113, ../sass/style.scss */
+.header-content .container .fast-start {
+  position: relative;
   display: block;
   float: left;
+  margin-top: 80px;
 }
-/* line 95, ../sass/style.scss */
-.header-content .fast-start img {
-  -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);
+/* line 118, ../sass/style.scss */
+.header-content .container .fast-start img {
+  -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 20%, transparent 100%);
 }
-/* line 100, ../sass/style.scss */
-.header-content .form-signup {
-  max-width: 389px;
+/* line 121, ../sass/style.scss */
+.header-content .container .fast-start video {
+  /*width: 467px;
+  height: 257px;*/
+  position: absolute;
+  top: 18px;
+  left: 73px;
+}
+/* line 129, ../sass/style.scss */
+.header-content .container .form-signup {
+  width: 389px;
   height: 406px;
   display: block;
   float: right;
-  position: relative;
   background: url(../img/form-shadow.png) 0 0 no-repeat;
+  margin: 50px 40px 0 0;
 }
-/* line 107, ../sass/style.scss */
-.header-content .form-signup input {
+/* line 136, ../sass/style.scss */
+.header-content .container .form-signup input {
   background: #000;
   border: 1px solid #f1c439;
   border-left-width: 4px;
+}
+/* line 141, ../sass/style.scss */
+.header-content .container .form-signup h4 {
+  font: 23px OpenSansBold;
+  color: white;
+  text-transform: uppercase;
+  margin: 30px 0 0 30px;
+}
+/* line 147, ../sass/style.scss */
+.header-content .container .form-signup p {
+  font: 14px OpenSansRegular;
+  color: white;
+  margin: 0 0 0 30px;
+}
+/* line 152, ../sass/style.scss */
+.header-content .container .form-signup form {
+  margin: 30px 0 0 30px;
+}
+/* line 154, ../sass/style.scss */
+.header-content .container .form-signup form input {
+  width: 330px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+/* line 160, ../sass/style.scss */
+.header-content .container .form-signup form .btn-signup {
+  width: 240px;
+  height: 55px;
+  background: #e8b927;
+  color: white;
+  font: 16px OpenSansExtraBold;
+  text-transform: uppercase;
+  border: 1px solid #e8b927;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin: 10px 0 0 45px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/* line 178, ../sass/style.scss */
+.header-content .container .form-signup form .btn-signup:hover {
+  background: #D2A005;
+  border-color: #D2A005;
 }

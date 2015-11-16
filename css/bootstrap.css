@@ -1590,15 +1590,15 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 768px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
-    width: 970px;
+    width: 1024px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     width: 1170px;
   }
@@ -6735,12 +6735,12 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hidden-sm {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
   .hidden-md {
     display: none !important;
   }

@@ -9,10 +9,15 @@
     <!-- style -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- fonts -->
     <link href="css/fonts.css" rel="stylesheet">
-
+    <!-- videojs -->
+    <link href="videojs/video-js.css" rel="stylesheet">
+    <!-- If you'd like to support IE8 -->
+    <script src="videojs/ie8/videojs-ie8.min.js"></script>
+    <!-- @media -->
+    <link href="css/media.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,6 +33,7 @@
           <div class="topline-logo">
             <img src="img/logo.png">
           </div>
+          <button class="btn-nav hidden-md hidden-lg"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
           <nav class="topline-nav">
             <ul>
               <li><a href="#">О сервисе</a></li>
@@ -37,8 +43,9 @@
               <li><a href="#">Помощь</a></li>
             </ul>
           </nav>
-          <div class="topline-user">
-            <button class="btn-user">Регистрация</button>
+          <div class="topline-user clearfix">
+            <button class="btn-user-xs hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>
+            <button class="btn-reg">Регистрация</button>
             <button class="btn-user">Вход</button>
           </div>
         </div>    
@@ -49,14 +56,20 @@
           <h3>Сервис для принятия инвестиционных</h3>
           <h1>решений на рынке <span>Forex</span></h1>
           <div class="fast-start">
-            <img src="img/desktop.png">
-            <div class="video">
-              <video>
+            <img class="img-responsive" src="img/desktop.png">
+
+              <video id="my-video" class="video-js" controls preload="auto" width="467" height="296" poster="img/video.png" data-setup="{}">
+                <source src="video/4invest-Forex.mp4" type='video/mp4'>
+                <source src="MY_VIDEO.webm" type='video/webm'>
                 
-              </video>
-            </div>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+
           </div>
-          <div class="form-signup clearfix">
+          <div class="form-signup center-block clearfix">
             <h4>Регистрируйтесь сейчас</h4>
             <p>Увеличивайте доходность инвестиций с 4invest!</p>
             <form>
@@ -69,10 +82,17 @@
         </div>
       </div>
     </section>
-
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- videojs -->
+    <script src="videojs/video.js"></script>
+    <!-- common -->
+    <script src="js/common.js"></script>
   </body>
 </html>
+
+

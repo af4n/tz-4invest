@@ -20,8 +20,6 @@
 	-o-box-shadow: 0 2px 2px rgba(45,45,45,1);
 	box-shadow: 0 2px 2px rgba(45,45,45,1);
 	.container {
-		max-width: 1170px;
-		margin: 0 auto;
 		.topline-logo {
 			display: inline-block;
 			float: left;
@@ -29,6 +27,14 @@
 			img {
 				padding-bottom: 10px;
 			}
+		}
+		.btn-nav {
+			border: none;
+			background: transparent;
+			color: white;
+			font-size: 26px;
+			line-height: 32px;
+			margin: 25px 0 0 25px;
 		}
 		.topline-nav {
 			display: inline-block;
@@ -54,11 +60,44 @@
 		.topline-user {
 			display: inline-block;
 			float: right;
-			.btn-user {
-				float: left;
+			.btn-user-xs {
+				border: none;
+				background: transparent;
+				color: white;
+				font-size: 26px;
+				line-height: 32px;
+				margin: 25px 25px 0 0;
+			}
+			.btn-reg {
 				height: 32px;
 				line-height: 32px;
-				margin-left: 8px;
+				background-color: #405770;
+				border: 0;
+				color: #b7c5d9;
+				font: 15px VerdanaRegular;
+				padding: 6px;
+				margin-top: 23px;
+				-webkit-border-radius: 1px;
+				-moz-border-radius: 1px;
+				-o-border-radius: 1px;
+				border-radius: 1px;
+				-webkit-box-shadow: 0 2px 2px rgba(35,35,35,0.75);
+				-moz-box-shadow: 0 2px 2px rgba(35,35,35,0.75);
+				-o-box-shadow: 0 2px 2px rgba(35,35,35,0.75);
+				box-shadow: 0 2px 2px rgba(35,35,35,0.75);
+				-webkit-transition: all 0.25s;
+				-moz-transition: all 0.25s;
+				-o-transition: all 0.25s;
+				transition: all 0.25s;
+			}
+			.btn-reg:hover {
+				background: #314f6f;
+				color: #e8b927;
+			}
+			.btn-user {
+				height: 32px;
+				line-height: 32px;
+				/*margin-left: 8px;*/
 				background-color: #405770;
 				border: 0;
 				color: #b7c5d9;
@@ -86,7 +125,7 @@
 				color: #e8b927;
 			}
 		}
-	}	
+	}
 }
 
 .header-content {
@@ -111,19 +150,25 @@
 			color: #e8b927;
 		}
 		.fast-start {
-			position: relative;
 			display: block;
 			float: left;
 			margin-top: 80px;
 			img {
 				-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 20%, transparent 100%);
 			}
-			video {
-				/*width: 467px;
-				height: 257px;*/
-				position: absolute;
-			    top: 18px;
-			    left: 73px;
+			.video-js {
+				top: -336px;
+    			left: 73px;
+    			font-size: 20px;
+    			border: 0.04em solid #fff;
+    			.vjs-big-play-button {
+    				height: 2em;
+    				border-radius: 2em;
+    				line-height: 1.8em;
+    				width: 2em;
+    				top: 32%;
+    				left: 38%;
+    			}
 			}
 		}
 		.form-signup {
@@ -175,11 +220,13 @@
 					-o-transition: all 0.25s;
 					transition: all 0.25s;
 				}
+
 				.btn-signup:hover {
 					background: #D2A005;
 					border-color: #D2A005; 
 				}
 			}
 		}
-	}	
+	}
 }
+	
